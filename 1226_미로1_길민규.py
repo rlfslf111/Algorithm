@@ -26,7 +26,7 @@ for t in range(10):
         maze[i] = [int(_) for _ in maze[i]]
 
     for i in range(16):
-        # idx == 2에서 2를 찾으면 시작
+        # idx == 1에서 2를 찾으면 시작
         if maze[1][i] == 2:
             sp = i
             break
