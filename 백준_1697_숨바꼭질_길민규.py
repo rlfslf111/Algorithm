@@ -1,6 +1,3 @@
-# N, K = map(int,input().split())
-# count = 0
-
 n,k = map(int,input().split())
 cnt =0
 
