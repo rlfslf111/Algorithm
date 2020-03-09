@@ -91,7 +91,7 @@ for t in range(tc):
     N = int(N)
     board = [list(map(int,input().split())) for _ in range(N)]
     plus(d.index(S))
-    # move(d.index(S))
+    move(d.index(S))
 
     print('#{}'.format(t+1))
     for i in range(N):
