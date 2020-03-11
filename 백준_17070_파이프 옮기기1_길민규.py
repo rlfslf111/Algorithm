@@ -40,6 +40,27 @@ else:
     move(start_spot,start_state)
     print(cnt)
 
-
+    
+    
+    
+#DP로 풀기
+# N = int(input())
+# room = [list(map(int,input().split())) for _ in range(N)]
+# dp = [[[0]*3 for _ in range(N)] for _ in range(N)]
+# dp[0][1][0] = 1
+#
+# for i in range(N):
+#     for j in range(1,N):
+#         # 가로
+#         if j != N - 1 and not room[i][j+1]:
+#             dp[i][j+1][0] = dp[i][j][0] + dp[i][j][2]
+#         # 세로
+#         if i != N - 1 and not room[i+1][j]:
+#             dp[i+1][j][1] = dp[i][j][1] + dp[i][j][2]
+#         # 대각선
+#         if j != N - 1 and i != N - 1 and not room[i][j+1] and not room[i+1][j] and not room[i+1][j+1]:
+#             dp[i+1][j+1][2] = dp[i][j][0] + dp[i][j][1] + dp[i][j][2]
+#
+# print(sum(dp[N-1][N-1]))
 
 
